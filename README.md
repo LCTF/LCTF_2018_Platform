@@ -8,6 +8,12 @@ LCTF 2018 比赛平台。
 
 项目使用nginx+uwsgi+django部署，示例的[nginx配置文件](https://github.com/LCTF/LCTF_2018_Platform/blob/master/nginx.conf)和[uwsgi配置文件](https://github.com/LCTF/LCTF_2018_Platform/blob/master/app/backend/uwsgi.ini)都已上传。
 
+uwsgi配置文件中为控制权限使用nginx:nginx用户启动，请按需修改（大部分系统nginx用户为www-data:www-data）。然后把web目录owner修改为uwsgi的启动用户：
+
+```
+chown -R nginx:nginx .
+```
+
 开发版本为python 2.7，未测试过其他版本的兼容性。[项目依赖](https://github.com/LCTF/LCTF_2018_Platform/blob/master/app/backend/requirements.txt)
 
 ## 食用方法
