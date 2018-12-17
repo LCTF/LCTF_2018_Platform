@@ -8,6 +8,8 @@ LCTF 2018 比赛平台。
 
 项目使用nginx+uwsgi+django部署，示例的[nginx配置文件](https://github.com/LCTF/LCTF_2018_Platform/blob/master/nginx.conf)和[uwsgi配置文件](https://github.com/LCTF/LCTF_2018_Platform/blob/master/app/backend/uwsgi.ini)都已上传。
 
+开发版本为python 2.7，未测试过其他版本的兼容性。[项目依赖](https://github.com/LCTF/LCTF_2018_Platform/blob/master/app/backend/requirements.txt)
+
 ## 食用方法
 
 默认后台路径
@@ -35,4 +37,3 @@ python manage.py changepassword admin
 上题等操作都在后台进行。
 
 Enjoy it.
-
